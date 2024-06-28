@@ -1,0 +1,116 @@
+.title{
+  display: flex;
+  justify-content: space-between;flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.title h1{
+  font-size: 2rem;
+}
+.title a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #f35525;
+  color: white;
+  border-radius: 25px;
+}
+.title a:hover{
+  box-shadow: 1px 1px 5px grey;
+}
+.count  {
+  overflow: scroll;
+  padding: 5px;
+  margin: 0px;
+  /* border-radius: 20px 20px 0px 0px; */
+}
+.count::-webkit-scrollbar {
+  display: none;
+}
+
+.count table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.count table th, td {
+  text-align: left;   
+  padding: 8px 8px;
+}
+
+.count table tr:nth-child(even) {
+  background-color: #e5e5e5;
+  border-top:1px solid #f35525;
+  border-bottom:2px solid #f35525;
+}
+/* .count table tr{
+  border-bottom:2px solid #f35525
+} */
+.count table td:last-child {
+    display: flex;
+  }
+.count table td:last-child i {
+  display: flex;
+  align-items: center;
+    margin: 5px;
+    font-size: 1.5rem;
+  }
+
+.count table th {
+  background-color: #f35525;
+  color: white;
+}
+
+
+/* Responsive table */
+/* @media screen and (max-width: 600px) {
+  .title h1{
+    font-size: 1.9rem;
+  }
+  .title a{
+    padding: 5px 25px;
+  }
+  /* .count table, thead, tbody, th, td, tr {
+    display: block;
+    flex-direction: column;
+  } */
+
+  /* .count table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  } */
+  /* .count table tbody tr {
+    border-bottom: 3px solid #f35525;
+    border-top: 3px solid #f35525;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+  } */
+  /* .count table td:last-child{
+    display: flex;
+    flex-direction: row;
+  } */
+  /* .count table td:last-child {
+    display: block;
+  } */
+
+  /* .count table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  } */
+
+  /* .count table td:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+    font-weight: bold;
+  } */

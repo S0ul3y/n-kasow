@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  /* border: 1px solid #000;
+  position: relative; */
+  font-family: 'Poppins', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgba(128, 128, 128, 0.052);
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  text-shadow: 0px 0px 5px #f35525;
+  /* border: 1px solid black; */
+}
+form .formulaire{
+  width: 90vw;
+  padding:10px 50px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  /* border: 1px solid black; */
+}
+form .formulaire div{
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  margin-top:50px ;
+}
+form .formulaire .second-child{
+  width: 200px;
+  display:flex;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+}
+form .formulaire .second-child label{
+  width: 300px;
+}
+form div label{
+  margin-top: 10px;
+  /* color:#f35525 ; */
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 2px #f35525;
+}
+form .formulaire div input,select{
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 0px 1px 4px black;
+  border-radius: 5px;
+  outline: none;
+}
+form input[type="submit"]{
+  display: flex;
+
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 4px black;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  background-color: #f35525;
+  /* margin-top: 30px; */
+  margin: 20px 40px;
+}
+form input[type="submit"]:hover{
+  cursor: pointer;
+  box-shadow: 1px 2px 4px rgb(88, 87, 87);
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  form .formulaire{
+    width: 85vw;
+    padding:10px 20px;
+  }
+  form .formulaire div{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1{
+    font-size: 2rem;
+  }
+  form .formulaire{
+    width: 85vw;
+    padding:10px 20px;
+  }
+  form .formulaire div{
+    width: 350px;
+  }
+  form .formulaire div:last-child{
+    overflow: hidden;
+  }
+}

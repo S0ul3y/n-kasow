@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+html, body {
+    font-family: 'Poppins', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  
+  /* TITRE */
+  .titre{
+    width: 100%;
+    height: 50vh;
+    padding-top: 70px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .titre .titreTexte{
+    display: block;
+    color: white;
+    margin-left:50px ;
+    line-height: 50px;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  .titre form{
+    margin-top: 30px;
+    margin-left:50px ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+  }
+  /* @media screen and (max-width: 500px) {
+    .titre form{
+      flex-direction: column;
+    }
+  } */
+  /* #parfum{
+    background-color: white;
+    color: black;
+  } */
+  .titre form select,input{
+    margin: 5px;
+    outline: none;
+   }
+  /*.titre form select:active,input:active{
+    margin: 5px;
+  } */
+  .titre form select{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+  }
+  .titre form input[type="text"]{
+    min-width:20vw;
+    /* padding: 10px 30px; */
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+  }
+  .titre form input[type="submit"]{
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    background-color: #f35525;
+  }
+  .titre form input[type="submit"]:hover{
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgb(88, 87, 87);
+  }
+  /* .troisboutton{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 50px;
+  } */
+ 
+/* .troisboutton button{
+    width: 150px;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+}
+.troisboutton button:hover{
+    background-color: #f35525;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #f35525;
+} */
+.lesMaison .msg{
+  /* display: flex; */
+  /* font-size: 1.5rem; */
+  text-align: center;
+}
+.lesMaison{
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10px;
+    /* border: 1px solid black; */
+}
+.lesMaison .contenaire{
+    /* position: relative; */
+    /* max-width: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 290px !important;
+    min-width: 280px;
+    height: 430px;
+    min-height: 410px;
+    background-color: rgba(190, 189, 189, 0.51);
+    border-radius: 15px;
+    display: block;
+    padding: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.443);
+}
+.contenaire .favorie{
+  position: absolute;
+  right: 10px;
+  top: -35px;
+  width: 40px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: black;
+  overflow: hidden;
+  box-shadow: 3px 1px 4px #f35525;
+}
+
+.contenaire .favorie button{
+  position: absolute;
+  bottom: 5px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  display: flex;
+  background-color: black;
+  border: none;
+}
+.contenaire .favorie i{
+  font-size: 1.8rem;
+}
+.contenaire .favorie i:hover{
+  cursor: pointer;
+}
+
+/* .contenaire .favorie i:active{
+  color: rgba(238, 38, 38, 0.993);
+} */
+.contenaire .img{
+  width: 99%;
+  height: 200px;
+  margin: 0 auto;
+  
+}
+.contenaire .img img{
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.contenaire .info{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.contenaire > .info > .section1{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  /* border: 1px solid #f35525; */
+  /* box-sizing: border-box; */
+}
+.section1 span{
+  margin-bottom: 3px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color:black;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 1px 1px 4px #f35525;
+  /* border: 1px solid #f35525; */
+
+}
+.section1 h2{
+  display: flex;
+  font-weight: bolder;
+  color: black;
+  padding-left: 5px;
+  border-left: 4px solid #f35525;
+  text-transform:capitalize;
+  font-size: 1.4rem;
+}
+.caracteristique{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.caracteristique span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f35525;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 5px;
+  box-shadow: 3px 1px 4px black;
+}
+.caracteristique span i{
+  color: white;
+  /* width: 10%; */
+  /* height: 10%; */
+}
+.position{
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+  margin-top: 15px;
+}
+.position span{
+  display: flex;
+  align-items: bottom;
+  background-color: black;
+  color: rgb(48, 48, 48);
+  padding: 10px;
+  border-radius: 5px;
+}
+.position span i{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contenaire hr{
+  margin-bottom: 10px;
+}
+.contenaire .Savoirplus{
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  margin:  auto;
+  
+}
+.contenaire .Savoirplus:hover{
+  color: #f35525;
+}
+
+
+
+
+
+
+

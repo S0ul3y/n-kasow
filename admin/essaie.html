@@ -1,0 +1,138 @@
+<style>
+  
+  .count table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+  }
+
+  .count table th, td {
+    text-align: left;   
+    padding: 15px 8px;
+  }
+
+  .count table tr:nth-child(even) {
+    background-color: #e5e5e5;
+  }
+  .count table td:last-child {
+      display: flex;
+    }
+  .count table td:last-child button {
+      margin: 5px;
+    }
+
+  .count table th {
+    background-color: #f35525;
+    color: white;
+  }
+
+  /* Responsive table */
+  @media screen and (max-width: 600px) {
+    .count table, thead, tbody, th, td, tr {
+      display: block;
+      flex-direction: column;
+    }
+
+    .count table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .count table tbody tr {
+      border-bottom: 3px solid #f35525;
+      border-top: 3px solid #f35525;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    /* .count table td:last-child {
+      display: block;
+    } */
+
+    .count table td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    .count table td:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-column);
+      font-weight: bold;
+    }
+  }
+</style>
+<div class="count">
+<table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>titre</th>
+            <th>type</th>
+            <th>statu</th>
+            <th>prix</th>
+            <th>par</th>
+            <th>N_Salon</th>
+            <th>N_Toilette</th>
+            <th>N_Chambre</th>
+            <th>N_Cuisine</th>
+            <th>dateAjout</th>
+            <th>meuble</th>
+            <th>electricite</th>
+            <th>piscine</th>
+            <th >eau</th>
+            <th colspan="2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row -->
+          <tr>
+            <td data-column="id">1</td>
+            <td data-column="titre">Villa de luxe à Bamako</td>
+            <td data-column="type">Villa</td>
+            <td data-column="statu">Disponible</td>
+            <td data-column="prix">250000 FCFA</td>
+            <td data-column="par">mois</td>
+            <td data-column="nbreSalon">2</td>
+            <td data-column="nbreToilette">2</td>
+            <td data-column="nbreCuisine">2</td>
+            <td data-column="nbreCuisine">2</td>
+            <td data-column="dateAjout">10/04/2023</td>
+            <td data-column="meuble">Disponible</td>
+            <td data-column="electricite">indisponible</td>
+            <td data-column="piscine">Disponible</td>
+            <td data-column="eau">indisponible</td></div>
+            <td data-column="action" class="action"><button>Modifier</button><button>Supprimer</button></td></div>
+		  </tr>
+		
+          <tr>
+            <td data-column="id">1</td>
+            <td data-column="titre">Villa de luxe à Bamako</td>
+            <td data-column="type">Villa</td>
+            <td data-column="statu">Disponible</td>
+            <td data-column="prix">250000 FCFA</td>
+            <td data-column="par">mois</td>
+            <td data-column="nbreSalon">2</td>
+            <td data-column="nbreToilette">2</td>
+            <td data-column="nbreCuisine">2</td>
+            <td data-column="nbreCuisine">2</td>
+            <td data-column="dateAjout">10/04/2023</td>
+            <td data-column="meuble">Disponible</td>
+            <td data-column="electricite">indisponible</td>
+            <td data-column="piscine">Disponible</td>
+            <td data-column="eau">indisponible</td></div>
+		  </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+

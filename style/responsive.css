@@ -1,0 +1,67 @@
+@media screen and (max-width: 1000px) {
+      .troisboutton{
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .troisboutton button{
+        width: 140px;
+        padding: 10px ;
+        margin: 5px auto; 
+      }
+      .titre{
+        width: 100%;
+        height: 40vh;
+      }
+      .titre form{
+        flex-direction: column;
+      }
+      .titre form select,input{
+        font-size: 1.2rem;
+      }
+}
+@media screen and (max-width: 400px) {
+    .lesMaison .contenaire{
+        /* position: relative; */
+        /* max-width: 400px; */
+        width: 500px;
+        height: 415px;
+        background-color: rgba(190, 189, 189, 0.51);
+        border-radius: 15px;
+        display: block;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+   
+}
+@media screen and (max-width: 500px) {
+  .titre{
+    height: 65vh;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .titre .titreTexte{
+    margin-left:20px ;
+  }
+  .titre form{
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titre{
+    height: 90vh;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .titre .titreTexte{
+    /* margin-left:20px ; */
+    font-size: 2.3rem;
+  }
+  .titre form{
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,135 @@
+<?php
+session_start();
+require 'connexion.php';
+$msg='';
+if(isset($_POST['connexion'])){
+
+    if(!empty($_POST['email']) && !empty($_POST['mdp'])){
+    $email = $_POST['email'];
+    $mdp = $_POST['mdp'];
+    // Récupération du hachage du mot de passe depuis la base de données
+    $stmt = $bd->prepare('SELECT mdp FROM client WHERE email = :email');
+    $stmt->bindParam(':email', $email);
+    $stmt->execute();
+    $row = $stmt->fetch();
+    
+    if ($row && password_verify($mdp, $row['mdp'])) {
+        $_SESSION['email'] = $email;
+        if (isset($_SESSION['email']) && $_SESSION['email'] === true) {
+            // Rediriger l'utilisateur vers la page appropriée
+            header('Location:NosPropriete.php');
+            // exit;
+         }
+
+        header('Location: NosPropriete.php');
+        session_unset();
+    } else {
+        $msg = '<p style="color:red">email ou Mot de Passe Incorrect.</p>';        
+    }
+}else{
+    $msg = '<p style="color:red">Remplissez les champs s\'il vous plaît.</p>';
+}
+
+}
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tableau">
+        <div class="bloc">
+            <img src="images/info-icon-01.png" alt="">
+            <span>
+                <h2>250 m2</h2><br>
+                d'espace plat total
+            </span>
+        </div><hr>
+        <div class="bloc">
+            <img src="images/info-icon-02.png" alt="">
+            <span>
+                <h2>250 m2</h2><br>
+                d'espace plat total
+            </span>
+        </div><hr>
+        <div class="bloc">
+            <img src="images/info-icon-03.png" alt="">
+            <span>
+                <h2>250 m2</h2><br>
+                d'espace plat total
+            </span>
+        </div><hr>
+        <div class="bloc">
+            <img src="images/info-icon-04.png" alt="">
+            <span>
+                <h2>250 m2</h2><br>
+                d'espace plat total
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+.corps .tableau{
+    /* position: relative; */
+    width: 280px !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  }
+  .corps .tableau hr{
+    width: 80%;
+    border-color: rgba(236, 232, 232, 0.211);
+  }
+  .bloc{
+    display: flex  !important;
+    align-items: center ;
+    justify-content: space-around;
+    padding: 40px !important;
+    /* position: absolute; */
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin-left: -40px !important;
+    
+  }
+  .bloc img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+  }
+  .bloc span{
+    display: inline-block;
+    line-height: 15px;
+  }

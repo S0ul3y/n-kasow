@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+html, body {
+    font-family: 'Poppins', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  
+  /*  */
+
+  .entete{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .corps{
+    width: 90%;
+    /* margin: 100px; */
+    margin: 100px auto;
+    display: flex;
+    /* flex-wrap: wrap;: */
+    justify-content: space-around;
+  }
+  .corps .img{
+    width: 35%;
+    height: 75vh;
+    background-image: url(../images/featured.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .corps .img .font{
+    position: relative;
+    bottom: -85% !important;
+    right: -85% !important;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #f35525;
+    border-radius: 50%;
+}
+  .corps .img .font img{
+    margin: 0px auto;
+    height: 60%;
+}
+  .corps .description{
+    width: 55%;
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+    text-align: left;
+  }
+  .corps .description span {
+    border-left: 3px solid #f35525;
+    color: #f35525;
+    padding-left: 5px;
+    justify-content: left;
+    font-weight: bolder;
+    margin-left: 5px;
+  }
+  .corps .description h1 {
+    font-size: 2.5rem;
+    /* margin-left: -1px; */
+    margin: 10px -1px;
+    /* margin-bottom:10px ; */
+  }
+  .corps .description P {
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-left: 5px;
+  }
+  .corps .description .descTableau{
+    width: 95%;
+    border-radius: 10px;
+    background-color:rgba(248, 247, 247, 0.864) ;
+    
+  }
+  .corps .description .descTableau .bloc{
+    height: 0px;
+    
+  }
+
+  
+
+  .vuevideo{
+    width: 100%;
+    height: 110vh;
+    background-image: url(../images/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .vuevideo span{
+    border-left: 2px solid #f35525;
+    color: #f35525;
+    padding-left: 5px;
+    font-weight: bolder;
+  }
+  .vuevideo h1{
+    font-size: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+  }
+  .vuevideo .img{
+    border-radius: 15px;
+    width: 65%;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -150px;
+    background-image: url(../images/video-frame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .vuevideo .img span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #f355258c;
+    border: none;
+    outline: none;
+  }
+  .vuevideo .img span i{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;  
+  }
+  .Blocinfo{
+    
+    width: 95%;
+    /* margin-top: 200px; */
+    margin: 250px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .Blocinfo .info{
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #f355252d;
+    padding: 10px 25px;
+    /* padding-left: 50px; */
+    
+  }
+  .Blocinfo .info h1{
+    font-size: 3rem;
+    color: #f35525;
+    margin-right: 20px;
+  }
+  .Blocinfo .info p{
+    font-weight: bolder;
+    line-height: 30px;
+    font-size: 1.1rem;
+    align-items: center;
+  }
+  .Blocinfo .info span{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: #f35525;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 900px) {
+    .corps{
+      width: 100%;
+      /* margin: 100px; */
+      margin: 100px auto;
+      display: block;
+      justify-content: center;
+      flex-direction: column;
+    }
+    /* .corps .img{
+      width: 70%;
+      height: 80vh;
+      margin: 0px auto;
+      background-image: url(images/featured.jpg);
+
+  } */
+  .corps .img{
+    width: 85%;
+    height: 75vh;
+    margin: 0px auto;
+    /* text-align: left; */
+    position: relative;
+    /* justify-content: center; */
+    
+}
+    .corps .img .font{
+      
+      position: absolute;
+      bottom: -10% !important;
+      right: -5% !important;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      background-color: #f35525;
+      border-radius: 50%;
+      
+  }
+    .corps .img .font img{
+      margin: 0px auto;
+      height: 60%;
+  }
+    .corps .description{
+      width: 90%;
+      text-align: left;
+      margin: 50px auto;
+      
+    }
+    .corps .description span {
+      border-left: 3px solid #f35525;
+      color: #f35525;
+      padding-left: 5px;
+      justify-content: left;
+      font-weight: bolder;
+      margin-left: 5px;
+    }
+    .corps .description h1 {
+      font-size: 2.5rem;
+      /* margin-left: -1px; */
+      margin: 10px -1px;
+      /* margin-bottom:10px ; */
+    }
+    .corps .description P {
+      font-size: 1.2rem;
+      line-height: 25px;
+      margin-left: 5px;
+    }
+  }

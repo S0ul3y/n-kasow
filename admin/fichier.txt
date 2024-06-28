@@ -1,0 +1,267 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+  <thead>
+    <tr style="background-color: #f35525; color: white;">
+      <th>id</th>
+      <th>titre</th>
+      <th>type</th>
+      <th>statu</th>
+      <th>prix</th>
+      <th>par</th>
+      <th>nbreSalon</th>
+      <th>nbreToilette</th>
+      <th>nbreChambre</th>
+      <th>nbreCuisine</th>
+      <th>dateAjout</th>
+      <th>meuble</th>
+      <th>electicite</th>
+      <th>piscine</th>
+      <th>eau</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Vous pouvez ajouter vos données ici -->
+    <tr>
+      <td>1</td>
+      <td>Villa de luxe</td>
+      <td>Villa</td>
+      <td>A vendre</td>
+      <td>250 000 000 FCFA</td>
+      <td>M. Diarra</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>26/10/2023</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td>Oui</td>
+      <td><button>Modifier</button><button>Supprimer</button></td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<style>
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+
+  button {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f35525;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+  table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #f35525;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+button {
+  display: flex;
+}
+
+
+@media screen and (max-width: 600px) {
+    .count table, thead, tbody, th, td, tr {
+      display: block;
+      flex-direction: column;
+    }
+    tr {
+  border-bottom: 2px solid #f35525;
+}
+
+    .count table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    .count table td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    .count table td:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-column);
+      font-weight: bold;
+    }
+  }
+
+
+/* @media (max-width: 768px) {
+  table {
+  display: flex;
+}
+
+  td {
+    display: block;
+    width: 100%;
+  }
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  th {
+  background-color: #f35525;
+  color: white;
+  display: block;
+}
+  tr {
+  border-bottom: 2px solid #f35525;
+}
+
+} */
+
+
+
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Titre</th>
+      <th>Type</th>
+      <th>Statut</th>
+      <th>Prix</th>
+      <th>Par</th>
+      <th>Nombre de salon</th>
+      <th>Nombre de toilette</th>
+      <th>Nombre de chambre</th>
+      <th>Nombre de cuisine</th>
+      <th>Date d'ajout</th>
+      <th>Meuble</th>
+      <th>Electricité</th>
+      <th>Piscine</th>
+      <th>Eau</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Maison à vendre</td>
+      <td>Vente</td>
+      <td>Disponible</td>
+      <td>100000€</td>
+      <td>Particulier</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>01/01/2023</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td><button>Modifier</button><button>Supprimer</button></td>
+    </tr>
+
+    
+    <tr>
+      <td>1</td>
+      <td>Maison à vendre</td>
+      <td>Vente</td>
+      <td>Disponible</td>
+      <td>100000€</td>
+      <td>Particulier</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>01/01/2023</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td>Non</td>
+      <td>Oui</td>
+      <td><button>Modifier</button><button>Supprimer</button></td>
+    </tr>
+
+
+  </tbody>
+</table>
